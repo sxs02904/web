@@ -1,0 +1,391 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap');
+:root{
+    color:black;
+    font-size:20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ancizar-sans', sans-serif;
+}
+.html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color:lightblue;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.pic-intro{
+    width: 300px;
+    height: 300px;
+    background-image: url("pics/first.jpeg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15%;
+    margin-bottom: -50px;
+}
+a {
+color:mediumpurple;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 100px;
+    background-color: white;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+nav .left a{
+    font-size:25px;
+    font-family: 'Roboto Light', sans-serif;
+    font-weight: 500;
+}
+
+nav .right a{
+    font-size:20px;
+    font-family: 'Roboto Light', sans-serif;
+    margin:0 15px;
+}
+nav .right a:last-child{
+    color:lightblue;
+    background-color:mediumpurple;
+   padding:7.5px 12.5px;
+    border-radius:10px;
+}
+nav .right a:last-child >span{
+    margin-left:5px;
+}
+
+@media(max-width:600px){
+    nav {
+        padding: 0 20px;
+    }
+    nav .right a span{
+        display: none;
+    }
+    nav .right a {
+        font-size: 22px;
+    }
+    nav .right a:last-child{
+        background-color: transparent;
+        color:mediumpurple;
+        padding:0;
+    }
+    .intro {
+        padding: 0 20px;
+    }
+    .intro .text-intro h2{
+        font-size: 30px;
+    }
+    .skills {
+        padding: 0 20px;
+
+    }
+
+    .skills .cells .cell span{
+        font-size: 16px;
+    }
+
+
+}
+.intro{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin:50px 0;
+    align-items: center;
+    gap:40px;
+    margin-bottom: 100px;
+}
+.intro ,text-intro h2{
+    font-size:30px;
+}
+.intro .text-intro{
+    flex:5;
+}
+.intro .pic-intro{
+    flex:2;
+    display: flex;
+    justify-content: right;
+}
+.links {
+    margin-top: 25px;
+}
+.links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border:2px solid mediumpurple;
+    color:mediumpurple;
+    border-radius: 5px;
+    margin-right:10px;
+    margin-bottom: 10px;
+    transition: 0.1s;
+}
+
+.links a:hover{
+    color:rebeccapurple;
+    border:2px solid rebeccapurple;
+}
+.pic{
+    width: 300px;
+    height: 350px;
+    border-radius: 45%;
+}
+@media(max-width:850px){
+    .intro .text-intro h2{
+        font-size:35px;
+    }
+}
+@media(max-width:740px) {
+    .intro{
+        flex-direction: column-reverse;
+    }
+    .intro .pic-intro{
+        width: 300px;
+
+    }
+    .hobbies {
+        text-align: center;
+    }
+    .hobbies .group{
+        flex-direction: column;
+    }
+    .contact .lastgroup{
+        flex-direction: column;
+    }
+}
+.clogo{
+    width:100px;
+    height:100px;
+}
+.skills{
+    padding:0 50px;
+    margin:100px;
+}
+.skills h2{
+    text-align:center;
+    font-size:35px;
+}
+.skills p{
+    text-align:center;
+    margin-bottom:20px;
+}
+.skills .cells{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.skills .cells .cell{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    padding:10px 20px;
+    border:1.5px solid mediumpurple;
+    border-radius:5px;
+    margin:10px;
+    gap:10px;
+}
+.skills .cells .cell span {
+
+    font-size:18px;
+}
+.skills .cells .cell img {
+    width:30px;
+    height:30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.hobbies{
+    padding:0 50px;
+    margin-bottom:100px;
+}
+.hobbies h2{
+    font-size:35px;
+    margin-bottom:30px;
+}
+.hobbies .group{
+    display:flex;
+   gap:50px;
+    align-items: center;
+}
+.hobbies .group .person-details {
+text-align: center ;
+    flex:2;
+}
+.hobbies .group .person-details .text{
+    flex:8;
+
+}
+.slika{
+    width: 400px;
+    height: 300px;
+    background-image: url("pics/second.jpeg");
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.hobbies .group .person-details img{
+    aspect-ratio: 1/1;
+    width:300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.hobbies .group .person-details p{
+    font-weight: 600;
+}
+.hobbies .group .person-details p:last-child{
+    font-weight:normal;
+}
+
+.contact {
+padding: 0 50px;
+    margin-bottom:100px;
+}
+.contact h2{
+    font-size:35px;
+}
+.contact .lastgroup{
+    display:flex;
+    gap:50px;
+}
+.contact .lastgroup .lastxt {
+    margin-top:20px;
+flex:3;
+}
+.contact .lastgroup form {
+    flex:3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .lastgroup form input,.contact .lastgroup form textarea {
+    font-family: 'Ancizar Sans', sans-serif;
+    border: 2px solid mediumpurple;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+    border-radius:10px;
+}
+button {
+    font-size:22px;
+    font-family: 'Ancizar Sans', sans-serif;
+    color:lightblue;
+    background-color:mediumpurple;
+    border:none;
+    height: 50px;
+    border-radius:10px;
+    cursor: pointer;
+    transition: 0.1s;
+
+}
+.hobbies{
+    padding: 0 20px;
+}
+button:hover{
+    color:white;
+    background-color:hotpink;
+    filter(brightness(90%));
+}
+.contact{
+    padding: 0 20px;
+}
+
+.travel {
+width: 100%;
+    height: 400px;
+    display: flex;
+
+}
+.box1 {
+width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.skills >h2{
+    margin-bottom:20px;
+}
+.travel h2{
+    text-align:start;
+    font-size:35px;
+    padding-left: 15px;
+    padding-top:15px;
+}
+.hobbies .text{
+    margin-top:-75px;
+}
+.travel-info{
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+
+}
+
+
+.box2{
+    width:70%;
+    display: flex;
+    align-items: center;
+}
+.img1, .img2, .img3{
+    width:300px;
+    height:275px;
+    margin-right: 20px;
+    margin-left:15px;
+    border-radius:5px;
+}
+.img1, .img3{
+    position: relative;
+    top:-20px;
+}
+.img1{
+    background-image: url("pics/buda.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.img2{
+    position: relative;
+    top:20px;
+    background-image: url("pics/paris.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.img3{
+    background-image: url("pics/viena.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    color:rebeccapurple;
+    font-family:Rubik, sans-serif;
+}
+
+.travel-info{
+    font-size:22.5px;
+}
+.txt, .text{
+font-size:25px;
+    text-align: center;
+}
